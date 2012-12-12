@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# Uses hdhomerun_config to scan for channels and then creates .strm files in ~/Videos/Live TV for XBMC streaming
+
 # INSTALL SECTION UNTESTED - which is why it's commented out; uncomment at your own risk
 # Check if you have already installed hdhomerun-config; install it if not
 #if [ ! -d $(dpkg -l | grep hdhomerun-config) ]; then
