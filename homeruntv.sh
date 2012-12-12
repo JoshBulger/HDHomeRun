@@ -1,18 +1,19 @@
 #!/bin/bash
-
+# INSTALL SECTION UNTESTED - which is why it's commented out; uncomment at your own risk
 # Check if you have already installed hdhomerun-config; install it if not
-if [ ! -d $(dpkg -l | grep hdhomerun-config) ]; then
-	cd /tmp
-	for j in http://download.silicondust.com/hdhomerun/libhdhomerun_20120405.tgz http://download.silicondust.com/hdhomerun/hdhomerun_config_gui_20120405.tgz
-		wget $j
-		tar xvzf hdhomerun_config_gui_20120405.tgz
-		cd hdhomerun_config_gui/
-		./configure || $( sudo apt-get install --assume-yes libgtk2.0-dev; ./configure )
-		make
-		sudo make install clean
-	done
-	#rm -rf /tmp/hdhomerun*
-fi
+#if [ ! -d $(dpkg -l | grep hdhomerun-config) ]; then
+#	cd /tmp
+#	for j in http://download.silicondust.com/hdhomerun/libhdhomerun_20120405.tgz http://download.silicondust.com/hdhomerun/hdhomerun_config_gui_20120405.tgz
+#		wget $j
+#		tar xvzf hdhomerun_config_gui_20120405.tgz
+#		cd hdhomerun_config_gui/
+#		./configure || $( sudo apt-get install --assume-yes libgtk2.0-dev; ./configure )
+#		make
+#		sudo make install clean
+#	done
+#	#rm -rf /tmp/hdhomerun*
+#fi
+
 # Check if directory exists, if not then create it
 if [ ! -d "~/Videos/Live\ TV" ]; then
 	mkdir -p ~/Videos/Live\ TV
