@@ -1,0 +1,1 @@
+{"google":"","note":"Don't delete this file! It's used internally to help with page regeneration.","body":"Simple Script written in bash to parse hdhomerun_config scan into streaming files for use with XBMC.","name":"Hdhomerun","tagline":"Scan for device, create *.strm files from available channels into ~\\Videos/Live TV/ Simple single bash script"}
