@@ -31,12 +31,36 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <p>Once you have installed hdhomerun_config, instructions here:<a href="http://www.silicondust.com/support/hdhomerun/downloads/linux/">Linux HDHomeRun installation guide</a>, download the hdhomerun.sh script and run it.  You may have to add execute permissions with <code>chmod +x</code>.  Use <code>tar -zxvf {file.tar.gz}</code> To extract the script.
-On the rare occasion it may require to be run twice (if nothing shows up in your Live TV folder the first time).</p>
+        <h1>Info:</h1>
+
+<p>This project takes advantage of hdhomerun_config and then parses the scanned data from tuner1 into stream files to be used with XBMC.  This script is intended to only work with a single device.  As always, use code found on the internet at your own risk.  That being said you are more than welcome to download and view the code using your favorite editor.</p>
+
+<h1>Installation and use:</h1>
+
+<p>Once you have installed hdhomerun_config, instructions here:<a href="http://www.silicondust.com/support/hdhomerun/downloads/linux/">Linux HDHomeRun installation guide</a>, continue on with the below instructions.</p>
+
+<p>Change to the directory downloaded to: 
+ <code>$ cd ~/Downloads/</code></p>
+
+<p>Extract the tar.gz
+ '$ tar -zxvf JB19-HDHomeRun-dfdc052.tar.gz`</p>
+
+<p>Go into the extracted directory
+ <code>$ cd JB19-HDHomeRun-dfdc052</code></p>
+
+<p>Run the script.
+ <code>$ ./homeruntv.sh</code></p>
+
+<p>Check to make sure that you have *.strm files
+ <code>$ ls ~/Videos/Live\ TV</code></p>
+
+<p>On rare occasions it may require to be run twice (if nothing shows up in your Live TV folder the first time).</p>
 
 <p>Afterwards add <code>~/Videos/Live TV</code> to your video file in XBMC.</p>
 
 <p>You should now be able to stream individual channels via XBMC by opening Videos&gt;Live TV&gt;'Your Channel'</p>
+
+<p>*note that you are required to have XBMC installed to view the streams within XBMC.</p>
       </section>
     </div>
 
